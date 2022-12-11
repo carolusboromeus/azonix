@@ -1,0 +1,131 @@
+/* Navbar */ 
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end{ right:0; left: auto;  }
+    .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;}
+    .navbar .nav-item:hover .nav-link{ color: #F69D18;  }
+    .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+    .navbar .dropdown-menu.fade-up{ top:180%;  }
+    .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+
+@font-face {
+    font-family: Biryani;
+    src: url(./font/biryani\ heavy.ttf);
+}
+
+body{
+    font-family: Biryani;
+    padding-top: 50px;
+    height: auto;
+    background-color: #DCDCDC;
+}
+
+#azonix{
+    width: 150px;
+}
+
+.dropdown-toggle:after {
+    display: none;
+}
+
+.navbar{
+    background-color: #DCDCDC;
+}
+
+.navbar .nav-item .nav-link { 
+    color: #03265B;
+    font-weight: bold;
+    font-size: small;
+    padding-right: 20px;
+}
+
+.dropdown-menu a {
+    color: #03265B;
+    font-weight: bold;
+    font-size: small;
+}
+
+.navbar .dropdown-menu {
+    background-color: #DCDCDC;
+}
+
+.navbar .dropdown-menu:hover {
+    background-color: #DCDCDC;
+}
+
+#active {
+    color: #F69D18;
+}
+
+.navbar-link {
+    text-align: center;
+}
+
+.navbar-link:hover {
+    color: #F69D18;
+    background-color: #DCDCDC;
+}
+
+.navbar-icon {
+    margin-right: 10px;
+}
+
+#search:hover {
+    content: url('./image/icon/search-active.png');
+}
+
+#shopping:hover {
+    content: url('./image/icon/shopping\ cart-active.png');
+}
+
+#account:hover {
+    content: url('./image/icon/account-active.png');
+}
+
+/* and this styles the dropdwon trigger link, when open */
+.navbar .dropdown.show a { 
+    background-color: #DCDCDC;
+}
+
+.main {
+    width: 100%;
+}
+
+/* Bootstrap 4 text input with search icon */
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Footer */
+footer {
+    background-color: #DCDCDC; 
+    color:#03265B; 
+    border-top: gray solid 3px; 
+    padding-top:15px;
+    text-decoration: none;
+}
+
+.footer-title {
+    font-size: medium;
+}
+
+.footer-link {
+    color:#03265B;
+}
+
+.footer-link:hover {
+    color: #F69D18;
+    text-decoration: none;
+}
